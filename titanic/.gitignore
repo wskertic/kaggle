@@ -1,6 +1,7 @@
 # Data #
 ########
-images/*
+*.csv
+data/*
 
 # Compiled source #
 ###################

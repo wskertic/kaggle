@@ -1,0 +1,20 @@
+Link masks to images
+    x --> [patient]_[img#].tif
+    y --> [patient]_[img#]_Mask.tif
+
+Use positive masked images to identify Brachial Plexus
+
+Use minimum difference to identify 'patients'
+--> Cluster "patients" based on image similarity (difference)
+--> Predict "patient"
+-->
+
+Good idea to identify 'patient' clusters?
+-> Identify "patients"
+-> Use "patient's" well defined masks to inform "patient's" blank masks
+
+
+Potential Obstacles:
+**  Image orientation (flip/rotate)
+**  Images without Brachial Plexus object
+    --  Resolved by "patient" clustering

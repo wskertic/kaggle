@@ -1,0 +1,15 @@
+Cluster / Unsupervised classification of images
+Likelihood Maximization of Species given features for each clustered class
+
+
+To cluster images, start with list of species, add all image names that belong to species.
+
+For unidentified species, maximize ssim across all available species, add it to best match.
+
+To maximize ssim must consider all images already in the species set. Maximize sum of ssim for species set.
+
+First group similar shapes, then sub-group similar textures/ other features
+
+*****
+NEED TO FIX how images load into array for cv2.ml.trainEM(), they need to be in a single column, one image per row.... array for each individual image can likely be transformed into a 1 row by X column array & the array of images can be X rows (1584 for entirety of training data or less obviously for cross-validation) so X rows by 1 column (containing an image array on every row).
+*****

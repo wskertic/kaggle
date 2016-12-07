@@ -207,7 +207,7 @@ def write_patient_video(patient):
     features     = { f : image_features(images[f]) for f in images }
     dists        = feature_dists(features)
     f_seq        = image_sequence(dists)
-    write_gif(f_seq, images_masks, 'patient-%02i.gif' % patient)
+    write_gif(f_seq, images_masks, 'patient_gifs/patient-%02i.gif' % patient)
 
 
 def main():

@@ -2,9 +2,7 @@
 ########
 test/*
 train/*
-train_masks.csv
-sample_submission.csv
-uns.csv
+*.csv
 python/patient_gifs/*
 
 # Compiled source #
